@@ -1,0 +1,51 @@
+#contenedor {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    position:relative;
+}
+#fotos img {
+    width: 150px; height: 110px;
+}
+
+#galeria img {
+    width: 260px; height: 200px;
+}
+.fotosGaleria{
+    position:relative;
+    display:inline-block;
+
+}
+#galeria img.borrar{
+    position:absolute;
+    top:5px;
+    right:5px;
+    width:15px;
+    height:15px;
+
+}
+
+div#lightbox{
+    width:100%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5);
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+    justify-content:center; 
+    align-items:center; 
+
+}
+#lightbox img{
+    width:50%;
+}
+img#anterior, img#siguiente{
+    width:50px;
+}
+img#siguiente{
+    transform: rotate(180deg);
+}
+
